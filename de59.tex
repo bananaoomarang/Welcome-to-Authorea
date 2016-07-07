@@ -1,20 +1,2 @@
 
-In few unfortunate cases the investment of writing format-independent \latex simply isn&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;#x27;t worth the result. For example, it may be very easy to align two \verb|{minipage}| blocks next to each other in HTML, but extremely painful to fit them on the page in PDF. To achieve a delightful outcome in both formats in such cases, it may be needed to resort to platform-specific directives. \latexml offers support for this distinction using its own conditional operator: \verb|\iflatexml|.
-
-Here is an example setup that you can add to your \verb|header.tex| file:
-\begin{lstlisting}
-\def\onlyHTML#1{\iflatexml #1\fi}
-\def\onlyPDF#1{\iflatexml\else #1\fi}
-\end{lstlisting}
-
-and then use it to specify PDF-only line-breaks for your \verb|{minipage}| blocks:
-\begin{lstlisting}
-% ...
-\end{minipage}\onlyPDF{\newline}
-\begin{minipage}{% ...
-\end{lstlisting}
-
-The most common use of PDF-specific directives would likely remain the need for hard page breaks:
-\begin{lstlisting}
-\onlyPDF{\newpage}
-\end{lstlisting}
+In few unfortunate cases the investment of writing format-independent \latex simply isn&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;#x27;t worth the result. For example, it may be very easy to align 
