@@ -1,4 +1,4 @@
-two \verb|{minipage}| blocks next to each other in HTML, but extremely painful to fit them on the page in PDF. To achieve a delightful outcome in both formats in such cases, it may be needed to resort to platform-specific directives. \latexml offers support for this distinction using its own conditional operator: \verb|\iflatexml|.
+fdtwo \verb|{minipage}| blocks next to each other in HTML, but extremely painful to fit them on the page in PDF. To achieve a delightful outcome in both formats in such cases, it may be needed to resort to platform-specific directives. \latexml offers support for this distinction using its own conditional operator: \verb|\iflatexml|.
 
 Here is an example setup that you can add to your \verb|header.tex| file:
 \begin{lstlisting}
@@ -16,4 +16,4 @@ and then use it to specify PDF-only line-breaks for your \verb|{minipage}| block
 The most common use of PDF-specific directives would likely remain the need for hard page breaks:
 \begin{lstlisting}
 \onlyPDF{\newpage}
-\end{lstlisting} OK, let&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;#x27;s give it a whirlfa
+\end{lstlisting} OK, let's give it a whirlfa
